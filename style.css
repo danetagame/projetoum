@@ -31,47 +31,71 @@ nav a:hover {
 main {
   padding: 20px;
   text-align: center;
-  background-color: #6495ed;
 }
-.grid-container {
+
+.portfolio-layout-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  grid-template-columns: 1fr 1fr; 
   gap: 20px; 
-  padding: 20px;
-  justify-content: center; 
+  max-width: 1200px; 
+  padding: 20px 0; 
+}
+
+.portfolio-column {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+/* Estilo para o item marrom isolado */
+.portfolio-isolated-item {
+    grid-column: span 2; /* Faz com que o item marrom ocupe as duas colunas */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; 
 }
 
 .grid-item {
-  text-align: center; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
 }
 
 .grid-item img {
-  width: 200px; 
-  height: 200px; 
-  object-fit: contain; 
-  display: block; 
-  margin: 0 auto 10px auto; 
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
 .grid-item p {
   margin-top: 0;
-  font-size: 1em; 
+  font-size: 1em;
   color: #333;
+}
+
+/* Ajustes de responsividade para telas menores */
+@media (max-width: 768px) {
+  .portfolio-layout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-isolated-item {
+    grid-column: span 1;
+  }
 }
 
 footer {
   text-align: center;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 10px;
+  background: #eee;
+  margin-top: 40px;
 }
-.footer-grass-image {
-  width: 100%;  
-  object-fit: cover; 
-  display: block; 
-  margin-bottom: 10px;
-  background-color: #6495ed;
-}
-
 .banner {
   width: 100%;
   max-height: 200px;
