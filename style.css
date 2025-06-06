@@ -1,10 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Barriecito", cursive;;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
   color: #333;
 }
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: "Barriecito", cursive;
+}
+
 header {
   background: #fff;
   padding: 10px;
@@ -37,7 +42,7 @@ main {
 .portfolio-grid-main {
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  gap: 20px; 
+  gap: 60px; 
   max-width: 900px; 
   padding: 0; 
   justify-self: center;
@@ -53,8 +58,8 @@ main {
 }
 
 .grid-item img {
-  width: 200px; 
-  height: 200px;
+  width: 400px; 
+  height: 400px;
   object-fit: contain; 
   display: block;
   margin: 0 auto 10px auto; /
