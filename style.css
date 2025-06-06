@@ -68,7 +68,7 @@ footer {
 }
 .footer-grass-image {
   width: 100%; 
-  max-height: 150px;
+  max-height: 150px; 
   object-fit: cover; 
   display: block; 
   margin-bottom: 10px; 
